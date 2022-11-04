@@ -1,5 +1,5 @@
 import { ResultSetHeader } from 'mysql2';
-import { IProduct, IProducts } from '../interfaces/ProductsInterface';
+import { IProduct, IProducts } from '../interfaces/ProductInterface';
 import mysql from './connection';
 
 export default class ProductsModel {
