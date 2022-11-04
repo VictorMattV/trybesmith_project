@@ -10,4 +10,10 @@ export default class ProductsController {
 
     res.status(201).json(result);
   }
+
+  public async getProducts(_req: Request, res: Response): Promise<void> {
+    const result = await this.productsService.getProducts();
+
+    res.status(200).json(result);
+  }
 }
