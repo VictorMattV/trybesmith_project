@@ -10,4 +10,14 @@ export default class UsersController {
 
     res.status(201).json(token);
   }
+
+  public async login(req: Request, res: Response) {
+    const { error, message } = await this.usersService.login(req.body);
+
+    if (error) {
+      return res.status(401).json({ message: 'Username or password invalid' });
+    }
+
+    res.status(200).json(message);
+  } 
 }

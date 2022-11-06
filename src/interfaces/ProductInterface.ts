@@ -4,9 +4,6 @@ export interface IProduct {
   amount: string,
 }
 
-export interface IProducts {
+export interface IProducts extends IProduct{
   id?: number,
-  name: string,
-  amount: string,
-  orderId?: number,
 }
