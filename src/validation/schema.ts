@@ -15,3 +15,15 @@ export const productSchema = joi.object({
   name: nameSchema,
   amount: amountSchema,
 });
+
+const usernamePostSchema = joi.string().min(3).required();
+const classePostSchema = joi.string().min(3).required();
+const levelPostSchema = joi.number().min(1).required();
+const passwordPostSchema = joi.string().min(8).required();
+
+export const userSchema = joi.object({
+  username: usernamePostSchema,
+  classe: classePostSchema,
+  level: levelPostSchema,
+  password: passwordPostSchema,
+});
