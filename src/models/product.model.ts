@@ -27,4 +27,11 @@ export default class ProductsModel {
     
     return result as IProducts[];
   }
+
+  async updateProducts(orderId: number, id: number) {
+    await this.connection.execute(
+      'UPDATE Trybesmith.Products SET orderId=? WHERE id=?',
+      [orderId, id],
+    );
+  }
 }

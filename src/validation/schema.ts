@@ -27,3 +27,9 @@ export const userSchema = joi.object({
   level: levelPostSchema,
   password: passwordPostSchema,
 });
+
+const productsIdsSchema = joi.array().items(joi.number()).required();
+
+export const orderSchema = joi.object({
+  productsIds: productsIdsSchema,
+});

@@ -1,3 +1,4 @@
+import { ResultSetHeader } from 'mysql2';
 import { IOrder } from '../interfaces/OrderInterface';
 import mysql from './connection';
 
@@ -16,5 +17,14 @@ export default class OrdersModel {
     );
     
     return result as IOrder[];
+  }
+
+  async createOrder(userId: number) {
+    const [{ insertId }] = await this.connection.execute<ResultSetHeader>(
+      'INSERT INTO Trybesmith.Orders (userId) VALUES(?)',
+      [userId],
+    );
+
+    return insertId;
   }
 }

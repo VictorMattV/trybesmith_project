@@ -4,7 +4,7 @@ import UsersService from '../services/user.service';
 export default class UsersController {
   constructor(private usersService = new UsersService()) { }
 
-  public async createUser(req: Request, res: Response): Promise<void> {
+  public async createUser(req: Request, res: Response) {
     const { username, classe, level, password } = req.body;
     const token = await this.usersService.createUser(username, classe, level, password);
 
