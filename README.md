@@ -12,6 +12,8 @@ Este projeto consiste em uma aplicação de uma loja de itens medievais, na qual
 - Node;
 - TypeScript;
 - MySQL;
+- Express;
+- Docker;
 
 ## Como rodar esse projeto
 
@@ -184,6 +186,8 @@ This project consists of an application for a medieval items store, in which it 
 - Node;
 - TypeScript;
 - MySQL;
+- Express;
+- Docker;
 
 ## How to run this project
 
