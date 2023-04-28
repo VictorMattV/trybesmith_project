@@ -154,7 +154,7 @@ Endpoint responsável pela listagem de pedidos na loja.
   }
 ]` 
 
-## Validações de Produtos
+### Validações de Produtos
 
 Foram realizadas validações referentes à criação de produtos, a seguir descritas:
 
@@ -328,7 +328,7 @@ Endpoint responsible for listing orders in the store.
    }
 ]`
 
-## Product Validations
+### Product Validations
 
 Validations regarding the creation of products were performed, as described below:
 
